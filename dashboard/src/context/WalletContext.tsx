@@ -19,6 +19,7 @@ const WalletContext = createContext<WalletContextProps>({
   signMessage: async () => null,
 });
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useWallet = () => useContext(WalletContext);
 
 export const WalletProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
